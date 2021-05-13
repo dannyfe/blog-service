@@ -27,7 +27,6 @@ func NewSettring(configs ...string) (*Setting, error) {
 	//实现热跟新配置文件
 	s := &Setting{vp: vp}
 	s.WatchSettingChange()
-
 	return s, nil
 }
 
